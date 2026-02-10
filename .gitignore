@@ -14,6 +14,9 @@ build/
 .DS_Store
 Thumbs.db
 
+# Generated MCP config (contains secrets)
+.mcp.json
+
 # IDE
 .vscode/
 .idea/

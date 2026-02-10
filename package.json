@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "tsx scripts/setup-mcp.ts",
+    "pull-env": "npx dotenv-vault pull && tsx scripts/setup-mcp.ts"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +14,9 @@
   "dependencies": {
     "dotenv": "^17.2.4",
     "dotenv-vault-core": "^0.7.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   }
 }
