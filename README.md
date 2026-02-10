@@ -44,3 +44,4 @@ The project uses MCP servers for Claude Code tooling. The config is generated fr
 | Linear | OAuth (configured in Claude Code) |
 | Figma | OAuth (configured in Claude Code) |
 | GitHub | Personal access token via `GITHUB_PERSONAL_ACCESS_TOKEN` |
+| Slack | Bot token via `SLACK_BOT_TOKEN` + `SLACK_TEAM_ID` |
