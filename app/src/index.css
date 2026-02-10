@@ -1,0 +1,7 @@
+@import '@game/design-tokens/css/game.css';
+@import '@game/design-tokens/css/light.css';
+@import '@game/design-tokens/css/dark.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

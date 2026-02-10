@@ -1,0 +1,8 @@
+{
+  "tokenSetOrder": [
+    "ref",
+    "sem",
+    "themes/light",
+    "themes/dark"
+  ]
+}

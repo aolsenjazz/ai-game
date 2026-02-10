@@ -1,0 +1,754 @@
+{
+  "sem": {
+    "size": {
+      "web": {
+        "breakpoint": {
+          "sm": {
+            "value": "576",
+            "type": "sizing",
+            "description": "To better conform to Tailwind standards, the the sm token maybe shouldn't exist."
+          },
+          "md": {
+            "value": "768",
+            "type": "sizing"
+          },
+          "lg": {
+            "value": "1024",
+            "type": "sizing"
+          },
+          "xl": {
+            "value": "1280",
+            "type": "sizing"
+          },
+          "2xl": {
+            "value": "1536",
+            "type": "sizing"
+          }
+        },
+        "columns": {
+          "sm": {
+            "value": "1",
+            "type": "sizing"
+          },
+          "md": {
+            "value": "2",
+            "type": "sizing"
+          },
+          "lg": {
+            "value": "4",
+            "type": "sizing"
+          },
+          "xl": {
+            "value": "6",
+            "type": "sizing"
+          }
+        }
+      },
+      "icon": {
+        "sm": {
+          "value": "{ref.size.base}",
+          "type": "sizing"
+        },
+        "md": {
+          "value": "{ref.size.base} * {ref.size.scale.150}",
+          "type": "sizing"
+        },
+        "lg": {
+          "value": "{ref.size.base} * {ref.size.scale.250}",
+          "type": "sizing"
+        },
+        "xl": {
+          "value": "{ref.size.base} * {ref.size.scale.400}",
+          "type": "sizing"
+        }
+      },
+      "interactive": {
+        "xs": {
+          "value": "{ref.size.base}",
+          "type": "sizing"
+        },
+        "sm": {
+          "value": "{ref.size.base} * {ref.size.scale.200}",
+          "type": "sizing"
+        },
+        "md": {
+          "value": "{ref.size.base} * {ref.size.scale.300}",
+          "type": "sizing"
+        },
+        "lg": {
+          "value": "{ref.size.base} * {ref.size.scale.400}",
+          "type": "sizing"
+        }
+      }
+    },
+    "space": {
+      "page": {
+        "inset": {
+          "none": {
+            "value": "0",
+            "type": "spacing"
+          },
+          "sm": {
+            "value": "{ref.size.base}",
+            "type": "spacing"
+          },
+          "md": {
+            "value": "{ref.size.base} * {ref.size.scale.150}",
+            "type": "spacing"
+          },
+          "lg": {
+            "value": "{ref.size.base} * {ref.size.scale.200}",
+            "type": "spacing"
+          }
+        },
+        "inside": {
+          "none": {
+            "value": "0",
+            "type": "spacing"
+          },
+          "xs": {
+            "value": "{ref.size.base} * {ref.size.scale.25}",
+            "type": "spacing"
+          },
+          "sm": {
+            "value": "{ref.size.base} * {ref.size.scale.50}",
+            "type": "spacing"
+          },
+          "md": {
+            "value": "{ref.size.base}",
+            "type": "spacing"
+          },
+          "lg": {
+            "value": "{ref.size.base} * {ref.size.scale.200}",
+            "type": "spacing"
+          },
+          "xl": {
+            "value": "{ref.size.base} * {ref.size.scale.400}",
+            "type": "spacing"
+          }
+        }
+      },
+      "container": {
+        "inside": {
+          "none": {
+            "value": "0",
+            "type": "spacing"
+          },
+          "xs": {
+            "value": "{ref.size.base} * {ref.size.scale.25}",
+            "type": "spacing"
+          },
+          "sm": {
+            "value": "{ref.size.base} * {ref.size.scale.50}",
+            "type": "spacing"
+          },
+          "md": {
+            "value": "{ref.size.base}",
+            "type": "spacing"
+          },
+          "lg": {
+            "value": "{ref.size.base} * {ref.size.scale.200}",
+            "type": "spacing"
+          }
+        },
+        "inset": {
+          "none": {
+            "value": "0",
+            "type": "spacing"
+          },
+          "xs": {
+            "value": "{ref.size.base} * {ref.size.scale.25}",
+            "type": "spacing"
+          },
+          "sm": {
+            "value": "{ref.size.base} * {ref.size.scale.50}",
+            "type": "spacing"
+          },
+          "md": {
+            "value": "{ref.size.base}",
+            "type": "spacing"
+          },
+          "lg": {
+            "value": "{ref.size.base} * {ref.size.scale.200}",
+            "type": "spacing"
+          }
+        },
+        "stack": {
+          "sm": {
+            "value": "{ref.size.base} * {ref.size.scale.50}",
+            "type": "spacing"
+          },
+          "md": {
+            "value": "{ref.size.base}",
+            "type": "spacing"
+          },
+          "lg": {
+            "value": "{ref.size.base} * {ref.size.scale.150}",
+            "type": "spacing"
+          }
+        },
+        "border": {
+          "none": {
+            "value": "0",
+            "type": "spacing"
+          },
+          "sm": {
+            "value": "2",
+            "type": "spacing"
+          },
+          "md": {
+            "value": "4",
+            "type": "spacing"
+          },
+          "lg": {
+            "value": "6",
+            "type": "spacing"
+          }
+        }
+      },
+      "interactive": {
+        "inset": {
+          "none": {
+            "value": "0",
+            "type": "spacing"
+          },
+          "sm": {
+            "value": "{ref.size.base} * {ref.size.scale.50}",
+            "type": "spacing"
+          },
+          "md": {
+            "value": "{ref.size.base} * {ref.size.scale.75}",
+            "type": "spacing"
+          },
+          "lg": {
+            "value": "{ref.size.base}",
+            "type": "spacing"
+          }
+        },
+        "inside": {
+          "none": {
+            "value": "0",
+            "type": "spacing"
+          },
+          "xs": {
+            "value": "{ref.size.base} * {ref.size.scale.12}",
+            "type": "spacing"
+          },
+          "sm": {
+            "value": "{ref.size.base} * {ref.size.scale.25}",
+            "type": "spacing"
+          },
+          "md": {
+            "value": "{ref.size.base} * {ref.size.scale.50}",
+            "type": "spacing"
+          },
+          "lg": {
+            "value": "{ref.size.base}",
+            "type": "spacing"
+          }
+        },
+        "stack": {
+          "sm": {
+            "value": "{ref.size.base} * {ref.size.scale.50}",
+            "type": "spacing"
+          },
+          "md": {
+            "value": "{ref.size.base}",
+            "type": "spacing"
+          },
+          "lg": {
+            "value": "{ref.size.base} * {ref.size.scale.150}",
+            "type": "spacing"
+          }
+        },
+        "border": {
+          "none": {
+            "value": "0",
+            "type": "spacing"
+          },
+          "sm": {
+            "value": "2",
+            "type": "spacing"
+          },
+          "md": {
+            "value": "4",
+            "type": "spacing"
+          },
+          "lg": {
+            "value": "6",
+            "type": "spacing"
+          }
+        }
+      }
+    },
+    "modifiers": {
+      "enabled-alpha": {
+        "value": "1",
+        "type": "other",
+        "description": "Answers: what is the alpha of an enabled element?"
+      },
+      "disabled-alpha": {
+        "value": "0.5",
+        "type": "other",
+        "description": "Answers: what is the alpha of a disabled element?"
+      },
+      "hover-lightness-delta": {
+        "value": "0.1",
+        "type": "other",
+        "description": "What is the delta between a hovered and non-hovered color?"
+      },
+      "pressed-lightness-delta": {
+        "value": "0.1",
+        "type": "other",
+        "description": "What is the delta between a pressed and non-pressed color?"
+      }
+    },
+    "border": {
+      "interactive": {
+        "radius": {
+          "none": {
+            "value": "0",
+            "type": "borderRadius"
+          },
+          "sm": {
+            "value": "2",
+            "type": "borderRadius"
+          },
+          "md": {
+            "value": "4",
+            "type": "borderRadius"
+          },
+          "lg": {
+            "value": "8",
+            "type": "borderRadius"
+          },
+          "xl": {
+            "value": "16",
+            "type": "borderRadius"
+          },
+          "pill": {
+            "value": "1000",
+            "type": "borderRadius"
+          }
+        },
+        "width": {
+          "none": {
+            "value": "0",
+            "type": "borderWidth"
+          },
+          "sm": {
+            "value": "1",
+            "type": "borderWidth"
+          },
+          "md": {
+            "value": "2",
+            "type": "borderWidth"
+          },
+          "lg": {
+            "value": "3",
+            "type": "borderWidth"
+          }
+        },
+        "spacing": {
+          "none": {
+            "value": "{sem.space.interactive.border.none}",
+            "type": "other"
+          },
+          "sm": {
+            "value": "{sem.space.interactive.border.sm}",
+            "type": "other"
+          },
+          "md": {
+            "value": "{sem.space.interactive.border.md}",
+            "type": "other"
+          },
+          "lg": {
+            "value": "{sem.space.interactive.border.lg}",
+            "type": "other"
+          }
+        },
+        "style": {
+          "none": {
+            "value": "none",
+            "type": "other"
+          },
+          "default": {
+            "value": "solid",
+            "type": "other"
+          },
+          "dashed": {
+            "value": "dashed",
+            "type": "other"
+          },
+          "dotted": {
+            "value": "dotted",
+            "type": "other"
+          }
+        }
+      },
+      "container": {
+        "radius": {
+          "none": {
+            "value": "0",
+            "type": "borderRadius"
+          },
+          "sm": {
+            "value": "4",
+            "type": "borderRadius"
+          },
+          "md": {
+            "value": "8",
+            "type": "borderRadius"
+          },
+          "lg": {
+            "value": "16",
+            "type": "borderRadius"
+          },
+          "xl": {
+            "value": "32",
+            "type": "borderRadius"
+          },
+          "pill": {
+            "value": "1000",
+            "type": "borderRadius"
+          }
+        },
+        "width": {
+          "none": {
+            "value": "0",
+            "type": "borderWidth"
+          },
+          "sm": {
+            "value": "1",
+            "type": "borderWidth"
+          },
+          "md": {
+            "value": "2",
+            "type": "borderWidth"
+          },
+          "lg": {
+            "value": "4",
+            "type": "borderWidth"
+          }
+        },
+        "spacing": {
+          "none": {
+            "value": "{sem.space.container.border.none}",
+            "type": "other"
+          },
+          "sm": {
+            "value": "{sem.space.container.border.sm}",
+            "type": "other"
+          },
+          "md": {
+            "value": "{sem.space.container.border.md}",
+            "type": "other"
+          },
+          "lg": {
+            "value": "{sem.space.container.border.lg}",
+            "type": "other"
+          },
+          "style": {
+            "none": {
+              "value": "none",
+              "type": "other"
+            },
+            "default": {
+              "value": "solid",
+              "type": "other"
+            },
+            "dashed": {
+              "value": "dashed",
+              "type": "other"
+            },
+            "dotted": {
+              "value": "dotted",
+              "type": "other"
+            }
+          }
+        }
+      }
+    },
+    "box-shadow": {
+      "intensity": {
+        "value": "0.1",
+        "type": "other"
+      }
+    },
+    "interactive": {
+      "box-shadow": {
+        "elevation-1": {
+          "value": "{ref.box-shadow.blurry.2}",
+          "type": "boxShadow"
+        },
+        "elevation-2": {
+          "value": "{ref.box-shadow.blurry.3}",
+          "type": "boxShadow"
+        }
+      },
+      "container": {
+        "elevation-2": {
+          "value": "{ref.box-shadow.blurry.3}",
+          "type": "boxShadow"
+        },
+        "elevation-3": {
+          "value": "{ref.box-shadow.blurry.4}",
+          "type": "boxShadow"
+        },
+        "elevation-4": {
+          "value": "{ref.box-shadow.blurry.8}",
+          "type": "boxShadow"
+        }
+      }
+    },
+    "text": {
+      "title": {
+        "font-family": {
+          "value": "Arial",
+          "type": "fontFamilies"
+        },
+        "font-weight": {
+          "muted": {
+            "value": "500",
+            "type": "fontWeights"
+          },
+          "default": {
+            "value": "600",
+            "type": "fontWeights"
+          },
+          "emphasis": {
+            "value": "800",
+            "type": "fontWeights"
+          }
+        },
+        "font-size": {
+          "sm": {
+            "value": "{ref.font-size.typescale.sm}",
+            "type": "fontSizes"
+          },
+          "md": {
+            "value": "{ref.font-size.typescale.md}",
+            "type": "fontSizes"
+          },
+          "lg": {
+            "value": "{ref.font-size.typescale.lg}",
+            "type": "fontSizes"
+          },
+          "xl": {
+            "value": "{ref.font-size.typescale.xl}",
+            "type": "fontSizes"
+          },
+          "2xl": {
+            "value": "{ref.font-size.typescale.2xl}",
+            "type": "fontSizes"
+          }
+        },
+        "paragraph-spacing": {
+          "value": "none",
+          "type": "paragraphSpacing"
+        },
+        "line-height": {
+          "value": "{ref.line-height.125}",
+          "type": "lineHeights"
+        },
+        "typography": {
+          "sm": {
+            "value": {
+              "fontFamily": "{sem.text.title.font-family}",
+              "fontWeight": "{sem.text.title.font-weight.default}",
+              "fontSize": "{sem.text.title.font-size.sm}",
+              "lineHeight": "{sem.text.title.line-height}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{sem.text.title.font-family}",
+              "fontWeight": "{sem.text.title.font-weight.default}",
+              "fontSize": "{sem.text.title.font-size.md}",
+              "lineHeight": "{sem.text.title.line-height}"
+            },
+            "type": "typography"
+          },
+          "lg": {
+            "value": {
+              "fontFamily": "{sem.text.title.font-family}",
+              "fontWeight": "{sem.text.title.font-weight.default}",
+              "fontSize": "{sem.text.title.font-size.lg}",
+              "lineHeight": "{sem.text.title.line-height}"
+            },
+            "type": "typography"
+          },
+          "xl": {
+            "value": {
+              "fontFamily": "{sem.text.title.font-family}",
+              "fontWeight": "{sem.text.title.font-weight.emphasis}",
+              "fontSize": "{sem.text.title.font-size.xl}",
+              "lineHeight": "{sem.text.title.line-height}"
+            },
+            "type": "typography"
+          },
+          "2xl": {
+            "value": {
+              "fontFamily": "{sem.text.title.font-family}",
+              "fontWeight": "{sem.text.title.font-weight.emphasis}",
+              "fontSize": "{sem.text.title.font-size.2xl}",
+              "lineHeight": "{sem.text.title.line-height}"
+            },
+            "type": "typography"
+          }
+        }
+      },
+      "body": {
+        "font-family": {
+          "value": "Arial",
+          "type": "fontFamilies"
+        },
+        "font-weight": {
+          "muted": {
+            "value": "300",
+            "type": "fontWeights"
+          },
+          "default": {
+            "value": "400",
+            "type": "fontWeights"
+          },
+          "emphasis": {
+            "value": "600",
+            "type": "fontWeights"
+          }
+        },
+        "font-size": {
+          "sm": {
+            "value": "{ref.font-size.typescale.xs}",
+            "type": "fontSizes"
+          },
+          "md": {
+            "value": "{ref.font-size.typescale.sm}",
+            "type": "fontSizes"
+          },
+          "lg": {
+            "value": "{ref.font-size.typescale.md}",
+            "type": "fontSizes"
+          },
+          "xl": {
+            "value": "{ref.font-size.typescale.lg}",
+            "type": "fontSizes"
+          },
+          "2xl": {
+            "value": "{ref.font-size.typescale.xl}",
+            "type": "fontSizes"
+          }
+        },
+        "paragraph-spacing": {
+          "value": "0.5",
+          "type": "paragraphSpacing"
+        },
+        "line-height": {
+          "value": "{ref.line-height.112}",
+          "type": "lineHeights"
+        },
+        "typography": {
+          "sm": {
+            "value": {
+              "fontFamily": "{sem.text.body.font-family}",
+              "fontWeight": "{sem.text.body.font-weight.default}",
+              "fontSize": "{sem.text.body.font-size.sm}",
+              "lineHeight": "{sem.text.body.line-height}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{sem.text.body.font-family}",
+              "fontWeight": "{sem.text.body.font-weight.default}",
+              "fontSize": "{sem.text.body.font-size.md}",
+              "lineHeight": "{sem.text.body.line-height}"
+            },
+            "type": "typography"
+          },
+          "lg": {
+            "value": {
+              "fontFamily": "{sem.text.body.font-family}",
+              "fontWeight": "{sem.text.body.font-weight.default}",
+              "fontSize": "{sem.text.body.font-size.lg}",
+              "lineHeight": "{sem.text.body.line-height}"
+            },
+            "type": "typography"
+          },
+          "xl": {
+            "value": {
+              "fontFamily": "{sem.text.body.font-family}",
+              "fontWeight": "{sem.text.body.font-weight.emphasis}",
+              "fontSize": "{sem.text.body.font-size.xl}",
+              "lineHeight": "{ref.line-height.125}"
+            },
+            "type": "typography"
+          }
+        }
+      },
+      "helper": {
+        "font-family": {
+          "value": "Arial",
+          "type": "fontFamilies"
+        },
+        "font-weight": {
+          "muted": {
+            "value": "200",
+            "type": "fontWeights"
+          },
+          "default": {
+            "value": "300",
+            "type": "fontWeights"
+          },
+          "emphasis": {
+            "value": "500",
+            "type": "fontWeights"
+          }
+        },
+        "font-size": {
+          "sm": {
+            "value": "{ref.font-size.typescale.2xs}",
+            "type": "fontSizes"
+          },
+          "md": {
+            "value": "{ref.font-size.typescale.xs}",
+            "type": "fontSizes"
+          },
+          "lg": {
+            "value": "{ref.font-size.typescale.sm}",
+            "type": "fontSizes"
+          }
+        },
+        "paragraph-spacing": {
+          "value": "0.25",
+          "type": "paragraphSpacing"
+        },
+        "line-height": {
+          "value": "{ref.line-height.default}",
+          "type": "lineHeights"
+        },
+        "typography": {
+          "sm": {
+            "value": {
+              "fontFamily": "{sem.text.helper.font-family}",
+              "fontWeight": "{sem.text.helper.font-weight.default}",
+              "fontSize": "{sem.text.helper.font-size.sm}",
+              "lineHeight": "{sem.text.helper.line-height}"
+            },
+            "type": "typography"
+          },
+          "md": {
+            "value": {
+              "fontFamily": "{sem.text.helper.font-family}",
+              "fontWeight": "{sem.text.helper.font-weight.default}",
+              "fontSize": "{sem.text.helper.font-size.md}",
+              "lineHeight": "{sem.text.helper.line-height}"
+            },
+            "type": "typography"
+          }
+        }
+      }
+    }
+  }
+}

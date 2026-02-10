@@ -1,0 +1,39 @@
+PODS:
+  - Alamofire (5.10.2)
+  - Capacitor (8.0.0):
+    - CapacitorCordova
+  - CapacitorCordova (8.0.0)
+  - CapawesomeCapacitorLiveUpdate (8.1.0):
+    - Alamofire (~> 5.10.2)
+    - Capacitor
+    - ZIPFoundation (~> 0.9.0)
+  - ZIPFoundation (0.9.20)
+
+DEPENDENCIES:
+  - "Capacitor (from `../../../node_modules/.pnpm/@capacitor+ios@8.0.0_@capacitor+core@8.0.0/node_modules/@capacitor/ios`)"
+  - "CapacitorCordova (from `../../../node_modules/.pnpm/@capacitor+ios@8.0.0_@capacitor+core@8.0.0/node_modules/@capacitor/ios`)"
+  - "CapawesomeCapacitorLiveUpdate (from `../../../node_modules/.pnpm/@capawesome+capacitor-live-update@8.1.0_@capacitor+core@8.0.0/node_modules/@capawesome/capacitor-live-update`)"
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ZIPFoundation
+
+EXTERNAL SOURCES:
+  Capacitor:
+    :path: "../../../node_modules/.pnpm/@capacitor+ios@8.0.0_@capacitor+core@8.0.0/node_modules/@capacitor/ios"
+  CapacitorCordova:
+    :path: "../../../node_modules/.pnpm/@capacitor+ios@8.0.0_@capacitor+core@8.0.0/node_modules/@capacitor/ios"
+  CapawesomeCapacitorLiveUpdate:
+    :path: "../../../node_modules/.pnpm/@capawesome+capacitor-live-update@8.1.0_@capacitor+core@8.0.0/node_modules/@capawesome/capacitor-live-update"
+
+SPEC CHECKSUMS:
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
+  Capacitor: 341ff7cf652ec695d1a8ebf604db448ac7b6d635
+  CapacitorCordova: 5dc3912d25ef770a3fe0f431bb65c9fbfa2e92f9
+  CapawesomeCapacitorLiveUpdate: cb597aab760b01967b773e63adc317206b7f9e88
+  ZIPFoundation: dfd3d681c4053ff7e2f7350bc4e53b5dba3f5351
+
+PODFILE CHECKSUM: 24363b39df21c144c40b7fa2ce8e3b059d5f7877
+
+COCOAPODS: 1.16.2

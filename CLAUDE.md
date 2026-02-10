@@ -8,10 +8,32 @@ Social/texting game app — Reddit-meets-texting format where users share conver
 
 ## Tech Stack
 
-- **Package manager:** pnpm
-- **Language:** TypeScript
-- **Runtime:** Node.js v18+
+- **Package manager:** pnpm (monorepo with pnpm workspaces)
+- **Language:** TypeScript (strict mode)
+- **Frontend:** React 18 + Redux Toolkit + TanStack Router + Tailwind CSS
+- **Build:** Vite
+- **Native:** Capacitor (iOS + Android)
+- **Testing:** Jest + ts-jest
+- **Linting:** ESLint + Prettier (auto-sorted imports)
+- **Git hooks:** Husky pre-push runs lint, tsc, test
 - **Secrets:** dotenv-vault (see README.md for setup)
+
+## Monorepo Structure
+
+- `app/` — React frontend (Vite + Capacitor)
+- `core/` — Shared types and utilities
+- `design-tokens/` — Tokens Studio → Style Dictionary → CSS variables
+- `services/*` — Backend services (placeholder)
+
+## Design Tokens Pipeline
+
+Tokens Studio (Figma plugin) → `design-tokens/tokens/*.json` → Style Dictionary → `design-tokens/dist/css/*.css` → Tailwind CSS variables
+
+Build tokens: `pnpm --filter @game/design-tokens build`
+Watch tokens: `pnpm --filter @game/design-tokens start`
+
+Color palettes: sangria, gold-drop, golden-fizz, chathams-blue, lima, tapa, jumbo, pale-sky
+Themes: light + dark (via CSS class `.light` / `.dark`)
 
 ## Figma Design System
 
@@ -28,11 +50,13 @@ Social/texting game app — Reddit-meets-texting format where users share conver
 
 To use Figma tools, pass `fileKey: "iphKT2yNh7JpeeBJ4a5jMm"` and the node ID from the table above.
 
-### Design Tokens
+## Common Commands
 
-Managed via **Tokens Studio** plugin, synced to a Git repo.
-
-- Color naming: `ref/color/{palette}/{scale}` (e.g. `ref/color/sangria/500` = `#ff3232`)
-- Spacing naming: `sem/space/container/inside/{size}` (e.g. `md` = `16`)
-- Typography: Inter font family, weights 400/475
-- Shadows: Multi-layer drop shadows (e.g. `Shadow Hard/Extra Small`)
+```sh
+pnpm start          # Start all packages (dev mode)
+pnpm test           # Run all tests
+pnpm tsc            # Type-check all packages
+pnpm lint           # Lint all packages
+pnpm lint:fix       # Auto-fix lint issues
+pnpm pull-env       # Pull secrets + regenerate .mcp.json
+```

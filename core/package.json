@@ -1,0 +1,26 @@
+{
+  "name": "@game/core",
+  "version": "1.0.0",
+  "description": "The Game monorepo",
+  "author": "Alexander Olsen",
+  "exports": {
+    "./types": "./src/types/index.ts"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "eslint ./src -c ../eslint.config.mjs",
+    "lint:fix": "eslint ./src --fix -c ../eslint.config.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "catalog:",
+    "@ianvs/prettier-plugin-sort-imports": "catalog:",
+    "@typescript-eslint/eslint-plugin": "catalog:",
+    "@typescript-eslint/parser": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "eslint-plugin-prettier": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:",
+    "typescript-eslint": "catalog:"
+  }
+}

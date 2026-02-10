@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ESNext"],
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "types": ["node"],
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "noEmit": true,
+    "declaration": false,
+    "skipLibCheck": true
+  }
+}
