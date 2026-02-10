@@ -1,7 +1,9 @@
 # Environment variables / secrets
-.env
-.env.local
-.env.*.local
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
+!.env.example
 
 # Node
 node_modules/
